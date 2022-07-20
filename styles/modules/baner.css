@@ -1,9 +1,0 @@
-.baner {
-    background-image: image-set(
-                        url('../../images/baner_1x.avif') 1x,
-                        url('../../images/baner_2x.avif') 2x,
-                        url('../../images/baner_1x.webp') 1x,
-                        url('../../images/baner_2x.webp') 2x,
-                        url('../../images/baner_1x.jpg') 1x,
-                        url('../../images/baner_2x.jpg') 2x);
-}
