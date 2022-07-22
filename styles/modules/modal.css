@@ -1,10 +1,10 @@
 .modal {
-    margin: 40px 0;
-    display: inline-block;
-    vertical-align: middle;
+    margin: auto;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     cursor: default;
-    text-align: left;
-    white-space: normal;
+    /* text-align: left; */
+    /* white-space: normal; */
     visibility: hidden;
     opacity: 0;
     max-width: 688px;
@@ -12,13 +12,11 @@
     transition-property: opacity, visibility;
     transition-timing-function: ease-in-out;
 }
-
 .modal_open {
     visibility: visible;
     opacity: 1;
     /* transition: opacity 0.36s ease-in-out, visibility 0.36s ease-in-out; */
 }
-
 .modal__container {
     position: relative;
     background-color: #FFF;
@@ -26,7 +24,6 @@
     border-radius: 30px;
     padding: 20px 20px 45px;
 }
-
 .modal__title {
     max-width: 400px;
     margin: 0 auto 20px;
@@ -36,7 +33,6 @@
     text-align: center;
     color: #55C2FF;
 }
-
 .modal__person {
     display: flex;
     padding: 0;
@@ -44,7 +40,6 @@
     border: 0;
     margin-bottom: 27px;
 }
-
 .modal__label {
     display: block;
     flex-grow: 1;
@@ -55,11 +50,9 @@
     line-height: 16px;
     color: #858585;
 }
-
 .modal__label:not(:last-child) {
     margin-right: 16px;
 }
-
 .modal__input {
     font-family: 'IBM Plex Sans';
     font-weight: 300;
@@ -74,7 +67,6 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .modal__order {
     display: block;
     margin: 0 auto;
@@ -89,8 +81,18 @@
     padding: 11px;
     max-width: 232px;
     width: 100%;
+    border: 1px solid transparent;
+    transition-property: background-color, border-color;
+    transition-duration: 0.36s;
+    transition-timing-function: ease-in-out;
 }
-
+.modal__order:hover, .modal__order:focus {
+    background-color: #1C88EB;
+}
+.modal__order:active {
+    border-color: #1C88EB;
+    background-color: #55C2FF;
+}
 .modal__close {
     position: absolute;
     right: 14px;
@@ -99,8 +101,17 @@
     background-color: transparent;
     line-height: 0;
     color: #55C2FF;
+    border: 2px solid transparent;
+    transition-property: color;
+    transition-duration: 0.36s;
+    transition-timing-function: ease-in-out;
 }
-
+.modal__close:hover, .modal__close:focus {
+    color: #1C88EB;
+}
+.modal__close:active {
+    color: #55C2FF;
+}
 @media (max-width: 768px) {
     .modal__container {
         padding: 20px 13px 36px;

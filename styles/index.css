@@ -4,4 +4,8 @@
 @import 'modules/header.css';
 @import 'modules/navigation.css';
 @import 'modules/hero.css';
+@import 'modules/about-us.css';
+@import 'modules/advantage.css';
+@import 'modules/exchange-rates.css';
 @import 'modules/modal.css';
+@import 'modules/footer.css';

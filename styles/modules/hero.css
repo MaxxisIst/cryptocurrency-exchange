@@ -7,19 +7,16 @@
                         url('../../images/baner_1x.jpg') 1x,
                         url('../../images/baner_2x.jpg') 2x);
 } */
-
 .hero {
     background-color: #000;
     background-image: url('../../images/baner_1x.jpg');
     background-size: cover;
     background-position: center;
 }
-
 .hero__container {
     padding-top: 127px;
     padding-bottom: 127px;
 }
-
 .hero__title {
     font-weight: 700;
     font-size: 100px;
@@ -27,7 +24,6 @@
     color: #55C2FF;
     margin-bottom: 18px;
 }
-
 .hero__subtitle {
     max-width: 480px;
     margin-bottom: 50px;
@@ -37,7 +33,6 @@
     line-height: 29px;
     color: #FFF;
 }
-
 .hero__btn {
     font-weight: 500;
     font-size: 14px;
@@ -50,14 +45,23 @@
     padding: 11px;
     max-width: 232px;
     width: 100%;
+    border: 2px solid transparent;
+    transition-property: background-color, border-color;
+    transition-duration: 0.36s;
+    transition-timing-function: ease-in-out;
 }
-
+.hero__btn:hover, .hero__btn:focus {
+    background-color: #1C88EB;
+}
+.hero__btn:active {
+    border-color: #E4F2FF;
+    background-color: #55C2FF;
+}
 @media (max-width: 1024px) {
     .hero__container {
         padding-top: 92px;
         padding-bottom: 92px;
     }
-
     .hero__subtitle {
         margin-bottom: 30px;
     }

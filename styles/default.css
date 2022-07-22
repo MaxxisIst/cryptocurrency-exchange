@@ -1,52 +1,45 @@
 html {
     box-sizing: border-box;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     min-width: 320px;
     min-height: 100vh;
     font-family: Inter, sans-serif;
 }
-
 img, svg {
     max-width: 100%;
     height: auto;
     max-height: 100%;
 }
-
 button {
     padding: 0;
     cursor: pointer;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 h1, h2, h3, h4, p {
     margin: 0;
 }
-
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 30px;
 }
-
 .overlay {
+    display: flex;
     position: fixed;
-    text-align: center;
+    /* text-align: center; */
+    padding: 40px 0;
     inset: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.6);
@@ -57,14 +50,14 @@ h1, h2, h3, h4, p {
     visibility: hidden;
     transition-property: opacity, visibility;
     transition-timing-function: ease-in-out;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
-.overlay:after {
+/* .overlay:after {
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-}
+} */
 .overlay_open {
     visibility: visible;
     opacity: 1;
