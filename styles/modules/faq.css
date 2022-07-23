@@ -70,3 +70,38 @@
 .faq__item:not(.faq__item_show) .faq__answer {
     display: none;
 }
+@media (max-width: 768px) {
+    .faq {
+        padding: 30px 0;
+    }
+    .faq__title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .faq__question {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .faq__answer {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 576px) {
+    .faq__item {
+        border-radius: 10px;
+    }
+    .faq__question {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .faq__question:after {
+        width: 18px;
+        height: 12px;
+    }
+    .faq__dropdown {
+        padding: 0 10px 10px;
+    }
+}

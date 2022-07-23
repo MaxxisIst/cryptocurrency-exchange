@@ -1,6 +1,6 @@
 .advantage__list-btn {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     justify-content: space-between;
     margin-bottom: 55px;
 }
@@ -77,9 +77,9 @@
     .advantage__list-btn {
         margin-bottom: 35px;
         display: grid;
-        justify-content: space-around;
+        justify-content: center;
         grid-template-areas: 
-            "convenience speed"
+            " convenience speed"
             "quality security";
         }
     .advantage__item-content {
@@ -102,12 +102,16 @@
     }
 }
 @media (max-width: 576px) {
+    .advantage__list-btn {
+        margin-bottom: 30px;
+    }
     .advantage__btn {
         width: 140px;
     }
     .advantage__item-content {
         flex-direction: column;
         align-items: center;text-align: center;
+        gap: 10px;
     }
     .advantage__item-content:before {
         width: 60px;
