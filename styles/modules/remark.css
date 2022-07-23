@@ -1,8 +1,9 @@
 .remark {
-    position: fixed;
     background-color: #08475E;
     overflow: hidden;
+    position: fixed;
     z-index: 998;
+    width: 100%;
 }
 .remark__text {
     font-family: 'IBM Plex Sans';
