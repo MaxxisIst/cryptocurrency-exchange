@@ -9,7 +9,7 @@ const closeRemark = () => {
             requestAnimationFrame(closeRemark);
         } else {
             remark.style.display = 'none';
-        };
+        }
 };
 
 setTimeout(closeRemark, 5000);
