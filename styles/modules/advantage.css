@@ -31,6 +31,7 @@
     max-width: 640px;
     margin: 0 auto;
     display: none;
+    align-items: center;
     gap: 40px;
     font-family: 'IBM Plex Sans';
     font-weight: 300;
@@ -61,4 +62,55 @@
 }
 .advantage__item-content_security:before {
     background-image: url('../../images/security.svg');
+}
+@media (max-width: 1024px) {
+    .advantage__btn {
+        width: 160px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media (max-width: 768px) {
+    .advantage__btn {
+        height: 40px;
+    }
+    .advantage__list-btn {
+        margin-bottom: 35px;
+        display: grid;
+        justify-content: space-around;
+        grid-template-areas: 
+            "convenience speed"
+            "quality security";
+        }
+    .advantage__item-content {
+        max-width: 415px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .advantage__item_convenience {
+        grid-area: convenience;
+    }
+    .advantage__item_speed {
+        grid-area: speed;
+    }
+    .advantage__item_quality {
+        grid-area: quality;
+    }
+    .advantage__item_security {
+        grid-area: security;
+    }
+}
+@media (max-width: 576px) {
+    .advantage__btn {
+        width: 140px;
+    }
+    .advantage__item-content {
+        flex-direction: column;
+        align-items: center;text-align: center;
+    }
+    .advantage__item-content:before {
+        width: 60px;
+        height: 60px;
+    }
 }

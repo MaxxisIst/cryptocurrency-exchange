@@ -26,10 +26,12 @@
             <nav class="navigation header__navigation">
                 <ul class="navigation__list navigation__list_header">
                     <li class="navigation__item">
-                        <a href="#about-us" class="navigation__link">Почему выбирают нас?</a>
+                        <a href="#about-us" class="navigation__link" title="Ссылка на
+                        наши преимущества">Почему выбирают нас?</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Частые вопросы</a>
+                        <a href="#" class="navigation__link" title="Ссылка на
+                        частые вопросы">Частые вопросы</a>
                     </li>
                 </ul>
             </nav>
@@ -49,17 +51,17 @@
                 <div class="about-us__wrapper">
                     <div class="about-us__advantage advantage">
                         <ul class="advantage__list-btn">
-                            <li class="advantage__item">
-                                <button class="advantage__btn advantage__btn_active">Удобство</button>
+                            <li class="advantage__item advantage__item_convenience">
+                                <button class="advantage__btn advantage__btn_active" title="Про наше удобство">Удобство</button>
                             </li>
-                            <li class="advantage__item">
-                                <button class="advantage__btn">Скорость</button>
+                            <li class="advantage__item advantage__item_speed">
+                                <button class="advantage__btn" title="Про нашу скорость">Скорость</button>
                             </li>
-                            <li class="advantage__item">
-                                <button class="advantage__btn">Качество</button>
+                            <li class="advantage__item advantage__item_quality">
+                                <button class="advantage__btn" title="Про наше качество">Качество</button>
                             </li>
-                            <li class="advantage__item">
-                                <button class="advantage__btn">Надежность</button>
+                            <li class="advantage__item advantage__item_security">
+                                <button class="advantage__btn" title="Про нашу надежность">Надежность</button>
                             </li>
                         </ul>
                         <ul class="advantage__list-content">
@@ -101,6 +103,48 @@
                 </div>
             </div>
         </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="faq__title">Частые вопросы</h2>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <h3 class="faq__question">Как обменивать монеты?</h3>
+                        <div class="faq__answer">
+                            <p class="faq__dropdown">
+                                Вы можете обменять любую поддерживаемую монету, следуя этим простым
+                                <a class="faq__link" href="#" title="Ссылка на инструкцию по обмену монет">шагам</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item faq__item_show">
+                        <h3 class="faq__question">Как долго ждать обмен?</h3>
+                        <div class="faq__answer">
+                            <p class="faq__dropdown">
+                                Каждая транзакция на Changelly проходит в три этапа. Обычно это занимает 5-30 минут. Если транзакция занимает больше времени, это может быть связано с несколькими факторами. Чтобы узнать причину задержки, необходимо определить на каком этапе она произошла. Пройдите на страницу История, найдите сделку, с которой возникли проблемы, и посмотрите ее статус.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">Как пользоваться платой?</h3>
+                        <div class="faq__answer">
+                            <p class="faq__dropdown">
+                                После регистрации вам будет доступна 
+                                <a class="faq__link" href="#" title="Ссылка на базу знаний Crypto">база знаний Crypto</a>, 
+                                в которой вы сможете ознакомится с подробными инструкциями по работе с платформой
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">Как вывести деньги на карту?</h3>
+                        <div class="faq__answer">
+                            <p class="faq__dropdown">
+                                Для того, чтобы вывести деньги на карту, необходимо прикрепить нужную карту к нашей платформе. Вывод денег доступен с 10:00 до 18:00 по Киеву в рабочие дни
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <div class="overlay">
         <div class="modal">
@@ -109,13 +153,13 @@
                 <form action="" class="modal__form">
                     <fieldset class="modal__person">
                         <label class="modal__label">Имя
-                            <input class="modal__input" type="text" name="name">
+                            <input class="modal__input" type="text" name="name" required>
                         </label>
                         <label class="modal__label">Фамилия
-                            <input class="modal__input" type="text" name="surname">
+                            <input class="modal__input" type="text" name="surname" required>
                         </label>
                         <label class="modal__label">Номер телефона
-                            <input class="modal__input" type="text" name="tel">
+                            <input class="modal__input" type="text" name="tel" required>
                         </label>
                     </fieldset>
                     <button class="modal__order" type="submit">Зарегистрироваться</button>
@@ -134,10 +178,12 @@
             <div class="footer__navigation navigation">
                 <ul class="navigation__list navigation__list_footer">
                     <li class="navigation__item navigation__item_footer">
-                        <a href="#about-us" class="navigation__link">Почему выбирают нас?</a>
+                        <a href="#about-us" class="navigation__link" title="Ссылка на
+                        наши преимущества">Почему выбирают нас?</a>
                     </li>
                     <li class="navigation__item navigation__item_footer">
-                        <a href="#" class="navigation__link">Частые вопросы</a>
+                        <a href="#" class="navigation__link" title="Ссылка на
+                        частые вопросы">Частые вопросы</a>
                     </li>
                 </ul>
             </div>
