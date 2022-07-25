@@ -52,16 +52,16 @@
     background-size: contain;
 }
 .advantage__item-content_convenience:before {
-    background-image: url('../../images/convenience.svg');
+    background-image: url('../images/convenience.svg');
 }
 .advantage__item-content_speed:before {
-    background-image: url('../../images/speed.svg');
+    background-image: url('../images/speed.svg');
 }
 .advantage__item-content_quality:before {
-    background-image: url('../../images/quality.svg');
+    background-image: url('../images/quality.svg');
 }
 .advantage__item-content_security:before {
-    background-image: url('../../images/security.svg');
+    background-image: url('../images/security.svg');
 }
 @media (max-width: 1024px) {
     .advantage__btn {
@@ -78,7 +78,7 @@
         margin-bottom: 35px;
         display: grid;
         justify-content: center;
-        grid-template-areas: 
+        grid-template-areas:
             " convenience speed"
             "quality security";
         }

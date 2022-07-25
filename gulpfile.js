@@ -6,8 +6,6 @@ import cssMin from 'gulp-cssmin';
 import rename from 'gulp-rename';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
-// import terser from 'gulp-terser';
-// import gulpImg from 'gulp-image';
 
 const html = () => gulp
     .src('src/*.html')
@@ -28,31 +26,23 @@ const js = () => gulp
         mode: 'production',
         devtool: false,
         optimization: {
-            minimize: true//false if terser
+            minimize: true
         },
         output: {
             filename: 'index.js'
         }
     }, webpack))
-    // .pipe(terser())
     .pipe(gulp.dest('dist/scripts'))
     .pipe(browserSync.stream());
 
 const copy = () => gulp
     .src([
         'src/fonts/**/*',
-        'src/images/**/*',
-        'src/styles/normalize.css'
+        'src/images/**/*'
     ], {
         base: 'src'
     })
     .pipe(gulp.dest('dist'));
-
-
-// const img = () => gulp
-//     .src('src/images/**/*.{jpg, jpeg, png, svg, gif}')
-//     .pipe(gulpImg())
-//     .pipe(gulp.dest('dist/images'));
 
 const server = () => {
     browserSync.init({
@@ -68,4 +58,4 @@ gulp.watch('src/*.html', html);
 gulp.watch('src/styles/**/*.css', cssmin);
 gulp.watch('src/scripts/**/*.js', js);
 
-export default gulp.series(clear, gulp.parallel(html, cssmin, js, copy), server);//,img
+export default gulp.series(clear, gulp.parallel(html, cssmin, js, copy), server);
