@@ -41,7 +41,8 @@ const js = () => gulp
 const copy = () => gulp
     .src([
         'src/fonts/**/*',
-        'src/images/**/*'
+        'src/images/**/*',
+        'src/styles/normalize.css'
     ], {
         base: 'src'
     })
