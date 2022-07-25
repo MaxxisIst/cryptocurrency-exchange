@@ -32,6 +32,7 @@ const js = () => gulp
             filename: 'index.js'
         }
     }, webpack))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(browserSync.stream());
 
